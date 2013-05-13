@@ -194,11 +194,16 @@ input {
   margin-bottom: 10px;
   padding-top: 5px;
   padding-bottom: 0px;
-  text-align: center;
+  p {
+    text-align: center;
+  }
   color: #fff;
   background-color: #246BB2;
   opacity: 0.85;
   font-family: "fantasy";
   -moz-border-radius: 6px;
+  ul {
+	list-style: none;
+  }
 }
 
