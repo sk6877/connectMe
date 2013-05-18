@@ -1,6 +1,7 @@
 @import "bootstrap";
 html {
   overflow-y: scroll;
+  height: 100%;
 }
 
 
@@ -72,12 +73,11 @@ body {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  bottom:0;
-  margin-top: 45px;
   padding-top: 5px;
-  //padding-bottom: 5px;
+  bottom: 0;
+
   small {
     color: white;
   }
@@ -204,6 +204,22 @@ input {
   -moz-border-radius: 6px;
   ul {
 	list-style: none;
+  }
+}
+
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-top: 1px solid $grayLighter;
+    &:last-child {
+      border-bottom: 1px solid $grayLighter;
+    }
   }
 }
 
